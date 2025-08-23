@@ -10,11 +10,11 @@ const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
+    // if (name === "@org/header") {
+    //   return System.import("http://localhost:4202/main.js");
+    // }
     if (name === "@org/header") {
       return System.import("http://localhost:4201/main.js");
-    }
-     if (name === "@org/footer") {
-      return System.import("http://localhost:4202/main.js");
     }
     return import(/* webpackIgnore: true */ name);
   },

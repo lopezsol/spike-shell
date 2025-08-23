@@ -32,17 +32,25 @@
     <script src="https://cdn.jsdelivr.net/npm/systemjs@6.14.2/dist/system.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/zone.js@0.14.6/+esm"></script>
 
+    <!-- TODO:PROBAR -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
     <!-- Add your organization's prod import map URL to this script's src  -->
     <!-- <script type="injector-importmap" src="/importmap.json"></script> -->
 
+    <!-- 
+    {
+        "imports": {
+          "@moby/root-config": "//localhost:9000/moby-root-config.js",
+          "@org/header": "//localhost:4201/main.js",
+          "@org/footer": "//localhost:4202/main.js"
+        }
+       -->
     <% if (isLocal) { %>
     <script type="injector-importmap">
       {
         "imports": {
           "@moby/root-config": "//localhost:9000/moby-root-config.js",
           "@org/header": "//localhost:4201/main.js",
-          "@org/footer": "//localhost:4202/main.js"
-
         }
       }
     </script>
