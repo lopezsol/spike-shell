@@ -1,12 +1,15 @@
 <single-spa-router>
+  <!-- cada microfront en una ruta -->
+  <application name="@org/home"></application>
+
   <main>
     <!-- <route path="/header">
       <application name="@org/header"></application>
     </route> -->
-    <!-- <route path="footer">
-      <application name="@org/footer"></application>
-    </route> -->
+
+    <route path="profile">
+      <application name="@org/profile"></application>
+    </route>
   </main>
   <!-- asi este componente queda fijo para todas las pantallas -->
-  <application name="@org/header"></application>
 </single-spa-router>

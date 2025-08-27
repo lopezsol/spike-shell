@@ -13,8 +13,14 @@ const applications = constructApplications({
     // if (name === "@org/header") {
     //   return System.import("http://localhost:4202/main.js");
     // }
-    if (name === "@org/header") {
-      return System.import("http://localhost:4201/main.js");
+    // if (name === "@org/header") {
+    //   return System.import("http://localhost:4201/main.js");
+    // }
+    if (name === "@org/home") {
+      return System.import("http://localhost:4203/main.js");
+    }
+    if (name === "@org/profile") {
+      return System.import("http://localhost:4204/main.js");
     }
     return import(/* webpackIgnore: true */ name);
   },

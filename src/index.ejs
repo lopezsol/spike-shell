@@ -45,12 +45,14 @@
           "@org/footer": "//localhost:4202/main.js"
         }
        -->
+        <!-- @shell -->
     <% if (isLocal) { %>
     <script type="injector-importmap">
       {
         "imports": {
-          "@moby/root-config": "//localhost:9000/moby-root-config.js",
-          "@org/header": "//localhost:4201/main.js",
+          "@moby/root-config": "http://localhost:9000/moby-root-config.js",
+          "@org/home": "http://localhost:4203/main.js",
+          "@org/profile": "http://localhost:4204/main.js"
         }
       }
     </script>
