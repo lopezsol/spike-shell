@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Root Config</title>
+
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';"
@@ -51,8 +52,9 @@
       {
         "imports": {
           "@moby/root-config": "http://localhost:9000/moby-root-config.js",
-          "@org/home": "http://localhost:4203/main.js",
-          "@org/profile": "http://localhost:4204/main.js"
+          "@org/componente": "http://localhost:4300/main.js",
+          "@org/header": "//localhost:4201/main.js",
+          "@org/home": "//localhost:4203/main.js"
         }
       }
     </script>
@@ -60,6 +62,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@5.1.1/dist/import-map-overrides.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@single-spa/import-map-injector@2.0.1/lib/import-map-injector.js"></script>
+  <style>
+        .home {
+      background: #0191c1;
+      background-color: red;
+      color: white;
+      padding: 1rem;
+    }
+    .componente {
+      background-color: blueviolet;
+    }
+
+  </style>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
   </head>
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>

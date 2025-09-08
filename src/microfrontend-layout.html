@@ -1,15 +1,17 @@
-<single-spa-router>
+<single-spa-router mode="hash">
   <!-- cada microfront en una ruta -->
-  <application name="@org/home"></application>
+  <!-- <application name="@org/componente"></application>-->
 
   <main>
-    <!-- <route path="/header">
+    <route path="/componente">
+      <div class="componente">
+        <application name="@org/componente"></application>
+      </div>
+    </route>
+    <!-- 
+    <route path="header">
       <application name="@org/header"></application>
     </route> -->
-
-    <route path="profile">
-      <application name="@org/profile"></application>
-    </route>
   </main>
   <!-- asi este componente queda fijo para todas las pantallas -->
 </single-spa-router>

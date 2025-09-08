@@ -1,0 +1,38 @@
+/* Estilos globales de la shell */
+.shell-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0191c1;
+}
+
+.home {
+  background: #0191c1;
+  background-color: red;
+  color: white;
+  padding: 1rem;
+}
+
+.componente {
+  background-color: blueviolet;
+}
+
+.shell-content {
+  flex: 1;
+  display: flex;
+  height: 100%;
+}
+
+.shell-sidebar {
+  width: 220px;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.shell-main {
+  flex: 1;
+  padding: 1rem;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
